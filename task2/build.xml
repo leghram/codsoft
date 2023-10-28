@@ -1,0 +1,9 @@
+<project name="Task2" default="compile" basedir=".">
+    <target name="init">
+        <mkdir dir="build/classes"/>
+    </target>
+
+    <target name="compile" depends="init">
+        <javac srcdir="src" destdir="build/classes"/>
+    </target>
+</project>
