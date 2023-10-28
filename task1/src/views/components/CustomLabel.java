@@ -16,7 +16,7 @@ public class CustomLabel extends JLabel {
         this.setOpaque(true);
         this.setForeground(UISettings.getBlackColor());
         this.setHorizontalAlignment(CENTER);
-        this.setBackground(Color.green);
+        this.setBackground(UISettings.getThinWhiteColor());
     }
 
     public void setNewFont(Font font){

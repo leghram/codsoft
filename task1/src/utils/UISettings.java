@@ -10,6 +10,7 @@ public class UISettings {
     private static Color grayClearColor = new Color(97,97,97);
     private static Color grayColor = new Color(76,76,76);
     private static Color blackColor = new Color(49,49,49);
+    private static Color thinWhiteColor = new Color(250,250,250);
 
     private static Font basicFont = new Font("Arial", Font.BOLD, 20);
     private static Font labelFont = new Font("Arial", Font.BOLD, 22);
@@ -32,6 +33,9 @@ public class UISettings {
     }
     public static Color getBlackColor(){
         return blackColor;
+    }
+    public static Color getThinWhiteColor(){
+        return thinWhiteColor;
     }
 
     public static Font getBasicFont(){

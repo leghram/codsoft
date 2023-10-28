@@ -2,12 +2,12 @@ package src.views.frames;
 
 import src.views.panels.MainPanel;
 
-import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
 
 import src.utils.InfoToolkit;
+import src.utils.UISettings;
 import src.views.components.BigButton;
 import src.views.components.CustomInput;
 import src.views.components.CustomLabel;
@@ -59,7 +59,7 @@ public class MainFrame extends BaseFrame  {
 
     public void setMainPanelActive(){
         this.cleanFrame();
-        mainPanel.setBackgroundColor(Color.blue);
+        mainPanel.setBackgroundColor(UISettings.getWhiteColor());
         BigButton btnStart = new BigButton("Start" );
         btnStart.setNewLocation(widthScreen/2 - 150, heighScreen/2);  
         btnStart.addActionListener(eventStartGame);
@@ -99,7 +99,7 @@ public class MainFrame extends BaseFrame  {
 
     public void setGamePanelActive(){
         this.cleanFrame();
-        gamePanel.setBackgroundColor(Color.yellow);
+        gamePanel.setBackgroundColor(UISettings.getWhiteColor());
         gamePanel.setFullScreen();
         this.addPanel(gamePanel);   
         
@@ -253,7 +253,7 @@ public class MainFrame extends BaseFrame  {
 
     public void setSettingsPanelActive(){
         this.cleanFrame();
-        configPanel.setBackgroundColor(Color.red);
+        configPanel.setBackgroundColor(UISettings.getWhiteColor());
         configPanel.setFullScreen();
 
         BigButton btnGoGamePanel = new BigButton("Back");  
