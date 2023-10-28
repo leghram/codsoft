@@ -10,8 +10,13 @@
 
 1. compile 
 
+```bash
 ant compile
+```
 
 2. run program
 
+```bash
 java -cp .\build\classes\ src.MainApp
+```
+
